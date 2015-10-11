@@ -1,4 +1,10 @@
-# desc "Explaining what the task does"
-# task :rspec_java do
-#   # Task goes here
-# end
+require 'fileutils'
+
+namespace :rspec_java do
+  desc 'initialize rspec and utilities'
+  task :init do
+    system('rspec --init')
+
+    FilUtils.cp()
+  end
+end
