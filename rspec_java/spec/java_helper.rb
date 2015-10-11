@@ -2,6 +2,7 @@ require 'spec_helper'
 
 require 'capybara/rspec'
 require 'capybara/poltergeist'
+require 'rspec/page-regression'
 
 Capybara.default_driver = Capybara.javascript_driver = :poltergeist
 
