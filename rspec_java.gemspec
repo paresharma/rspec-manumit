@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = RspecJava::VERSION
   s.authors     = ['paresharma']
   s.email       = ['paresh.brahm@gmail.com']
-  s.homepage    = 'TODO'
-  s.summary     = 'TODO: Summary of RspecJava.'
-  s.description = 'TODO: Description of RspecJava.'
+  s.homepage    = 'https://github.com/paresharma/rspec_java'
+  s.summary     = 'Utilities to hook in Capybara, Rspec and some other cool testing gems from the world of Ruby to the rest of the world.'
+  s.description = 'Utilities to hook in Capybara, Rspec and some other cool testing gems from the world of Ruby to the rest of the world.'
   s.license     = 'MIT'
 
   s.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']

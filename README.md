@@ -1,7 +1,7 @@
 ### Rspec Java
 
-A small gem with some utilities to hook in Capybara, rspec some other cool
-Testing gems from the world of Ruby to the world of Java.
+A small gem with some utilities to hook in Capybara, Rspec and some other cool
+testing gems from the world of Ruby to the rest of the world.
 
 ### License
 
