@@ -23,9 +23,9 @@ Bundler.require
 Then, run `rake rspec_java:init`. This will create `.rspec` file and `spec/` directory.
 Spec directory has a sample feature test (spec/features/hompage_spec.rb)
 
-Capybara will require a running server to run the tests, the test server endpoint can be coded to `spec/java_helper.rb` file, or can be pass as a command line parameter.
+Capybara requires a running server to run the tests, the test server endpoint can be coded to `spec/java_helper.rb` file, or can be pass as a command line argument.
 ```
-$ APP_HOST=http://localhost:8080 rspec
+$ APP_HOST=http://localhost:8080 bundle exec rspec
 ```
 
 ### License
