@@ -14,6 +14,7 @@ module RspecJava
     end
 
     def run
+      system('rspec --init')
       copy_template JAVA_HELPER_FILE
       copy_template REGRESSION_FEATURE_FILE
     end
