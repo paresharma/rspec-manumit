@@ -5,7 +5,7 @@ module RspecJava
     attr_reader :destination, :stream, :template_path
 
     JAVA_HELPER_FILE = 'spec/java_helper.rb'
-    REGRESSION_FEATURE_FILE =  'spec/features/homepage_spec.rb'
+    FEATURE_SPEC_FILE =  'spec/features/homepage_spec.rb'
 
     def initialize
       @destination = Dir.getwd
@@ -16,7 +16,7 @@ module RspecJava
     def run
       system('rspec --init')
       copy_template JAVA_HELPER_FILE
-      copy_template REGRESSION_FEATURE_FILE
+      copy_template FEATURE_SPEC_FILE
     end
 
     private
