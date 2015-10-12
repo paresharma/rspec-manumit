@@ -1,4 +1,4 @@
-require 'fileutils'
+require_relative '../project_initializer'
 
 module RspecJava::Rake
   extend ::Rake::DSL
@@ -9,7 +9,7 @@ module RspecJava::Rake
       task :init do
         system('rspec --init')
 
-        # FilUtils.cp('../spec/java_helper.rb', )
+        RspecJava::ProjectInitializer.new.run
       end
     end
   end

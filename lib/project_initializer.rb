@@ -1,3 +1,5 @@
+require 'fileutils'
+
 module RspecJava
   class ProjectInitializer
     attr_reader :destination, :stream, :template_path
@@ -8,7 +10,7 @@ module RspecJava
     def initialize
       @destination = Dir.getwd
       @stream = $stdout
-      @template_path = File.expand_path("../project_initializer", __FILE__)
+      @template_path = File.expand_path("../rspec_java/project_initializer", __FILE__)
     end
 
     def run
@@ -23,7 +25,7 @@ module RspecJava
       return report_exists(file) if File.exist?(destination_file)
 
       report_creating(file)
-      RSpec::Support::DirectoryMaker.mkdir_p(File.dirname(destination_file))
+      FileUtils.mkdir_p(File.dirname(destination_file))
       File.open(destination_file, 'w') do |f|
         f.write File.read(File.join(template_path, file))
       end
