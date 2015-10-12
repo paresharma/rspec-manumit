@@ -1,4 +1,4 @@
-require_relative '../project_initializer'
+require_relative './project_initializer'
 
 module RspecJava::Rake
   extend ::Rake::DSL

@@ -10,7 +10,7 @@ module RspecJava
     def initialize
       @destination = Dir.getwd
       @stream = $stdout
-      @template_path = File.expand_path("../rspec_java/project_initializer", __FILE__)
+      @template_path = File.expand_path('../project_initializer', __FILE__)
     end
 
     def run
