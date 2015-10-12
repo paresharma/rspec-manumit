@@ -14,3 +14,5 @@ module RspecJava::Rake
     end
   end
 end
+
+RspecJava::Rake.define_tasks
