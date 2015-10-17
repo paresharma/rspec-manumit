@@ -1,4 +1,4 @@
-require 'java_helper'
+require 'manumit_helper'
 
 RSpec.feature 'Home page', js: true do
   scenario 'visit homepage' do

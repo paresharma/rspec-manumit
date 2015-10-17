@@ -1,10 +1,10 @@
 require 'fileutils'
 
-module RspecJava
+module RSpec::Manumit
   class ProjectInitializer
     attr_reader :destination, :stream, :template_path
 
-    JAVA_HELPER_FILE = 'spec/java_helper.rb'
+    MANUMIT_HELPER_FILE = 'spec/manumit_helper.rb'
     FEATURE_SPEC_FILE =  'spec/features/homepage_spec.rb'
 
     def initialize
@@ -15,7 +15,7 @@ module RspecJava
 
     def run
       system('rspec --init')
-      copy_template JAVA_HELPER_FILE
+      copy_template MANUMIT_HELPER_FILE
       copy_template FEATURE_SPEC_FILE
     end
 
